@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 let new_total_cases = document.getElementById("total_cases");
 let total_deaths = document.getElementById("total_deaths");
 let total_recovered = document.getElementById("total_recovered");
@@ -59,6 +59,5 @@ let table = document.getElementById("countries_stat");
         console.log(err);
     });
 
-  });
-
+  
 
