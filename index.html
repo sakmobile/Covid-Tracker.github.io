@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css" >
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Covid Tracker</title>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="app.js?=v11" ></script>
+    <div class="wrapper">
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+      <a class="navbar-brand" href="#"><i class="fa fa-bug" aria-hidden="true"></i> Covid Tracker <i class="fa fa-bug" aria-hidden="true"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+         
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row" >
+          <div class="jumbotron col-12">
+            <div class="card bg-light text-dark text-center">
+              <div class="card-body "><h4><i class="fa fa-address-book" aria-hidden="true"></i> Total Cases</h4></div>
+              <h1><p id="total_cases"></p></h1>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <div class="card bg-light text-dark text-center">
+                  <div class="card-body "><h4><i class="fa fa-user-times" aria-hidden="true"></i> Total Deaths</h4></div>
+                  <h1><p id="total_deaths"></p></h1>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light text-dark text-center">
+                  <div class="card-body "><h4><i class="fa fa-refresh" aria-hidden="true"></i> Total Recovered</h4></div>
+                  <h1><p id="total_recovered"></p></h1>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light text-dark text-center">
+                  <div class="card-body "><h4><i class="fa fa-user-plus" aria-hidden="true"></i> New Cases</h4></div>
+                  <h1><p id="new_cases"></p></h1>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light text-dark text-center">
+                  <div class="card-body "><h4><i class="fa fa-user-circle-o" aria-hidden="true"></i> New Deaths</h4></div>
+                  <h1><p id="new_deaths"></p></h1>
+                </div>
+              </div>
+            </div>
+            <br >
+            <table class="table table-bordered" id = "countries_stat">
+              <thead>
+                <tr>
+                  <th class = "text-center" scope="col">#</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Cases</th>
+                  <th scope="col">Deaths</th>
+                  <th scope="col">Serious Critical</th>
+                  <th scope="col">Total Recovered</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+
+
+
+          </div>
+        </div>
+     
+    </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
