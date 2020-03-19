@@ -15,7 +15,7 @@ let table = document.getElementById("countries_stat");
     })
     .then(response => response.json().then(data=>{
         console.log(data);
-        new_total_cases.innerHTML = data.total_cases;
+        new_total_cases.innerHTML=data.total_cases;
         total_deaths.innerHTML = data.total_deaths;
         total_recovered.innerHTML = data.total_recovered;
         new_cases.innerHTML = data.new_cases;
@@ -39,7 +39,7 @@ let table = document.getElementById("countries_stat");
         let countries_stat = data.countries_stat;
         for(let i = 0; i < countries_stat.length; i++){
          console.log(countries_stat[i]);
-            let row = table.insertRow(i+1);
+            let row=table.insertRow(i+1);
             let num = row.insertCell(0);
             let country_name = row.insertCell(1);
             let cases = row.insertCell(2);
